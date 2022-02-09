@@ -1,0 +1,44 @@
+.contact{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px;
+  width: 100%;
+  border-bottom: solid 1px #a5fca0;
+  .avatar{
+    width: 60px;
+    height: 60px;
+    background: #0c0328;
+    border-radius:100% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  &_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p{
+      margin-left: 30px;
+      color: gray;
+      font-weight: normal;
+      font-size: 20px;
+    }
+  }
+  .delete{
+    outline: none;
+    background: none;
+    border: none;
+    color: #f35a5a;
+    font-weight: 500;
+    font-size: 20px;
+    transition: all .2s;
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
+}

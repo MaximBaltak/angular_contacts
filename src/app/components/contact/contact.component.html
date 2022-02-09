@@ -1,0 +1,9 @@
+<li class="contact">
+  <div class="avatar" [ngStyle]="{background:contact.avatar.background}">{{contact.avatar.symbol}}</div>
+  <div class="contact_wrapper">
+    <p>{{contact.name}}</p>
+    <p>{{contact.phone}}</p>
+  </div>
+  <button class="delete" (click)="delete()" >Удалить</button>
+  <button class="delete" (click)="edit()">Изменить</button>
+</li>

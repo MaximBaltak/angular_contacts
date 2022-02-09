@@ -1,0 +1,14 @@
+<div class="overlay" id="overlay"   (click)="close($event)">
+  <div class="overlay_window">
+    <div class="overlay_window_wrapper">
+      <p *ngIf="sr.errorName">{{sr.errorName}}</p>
+      <input type="text" placeholder="Имя" [value]="sr.inputName" (change)="changeName($event)"/>
+    </div>
+    <div class="overlay_window_wrapper">
+      <p *ngIf="sr.errorPhone">{{sr.errorPhone}}</p>
+      <input type="text" placeholder="Телефон" [value]="sr.inputPhone" (change)="changePhone($event)" >
+    </div>
+    <button *ngIf="typeModal==='add'" (click)="add()" >Добавить</button>
+    <button *ngIf="typeModal==='edit'" (click)="edit()" >Изменить</button>
+  </div>
+</div>

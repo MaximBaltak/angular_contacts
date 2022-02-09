@@ -1,0 +1,53 @@
+.overlay{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background: rgba(0,0,0,.3);
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  &_window{
+    width: 300px;
+    padding: 10px;
+    min-height: 100px;
+    background: white;
+    &_wrapper{
+      margin: 20px auto;
+      p{
+        font-size: 18px;
+        font-weight: 500;
+        color: darkred;
+      }
+      input{
+        outline: none;
+        border: none;
+        background: none;
+        border-bottom: solid 1px black;
+        width: 200px;
+        height: 50px;
+        padding: 5px;
+        color: black;
+        font-size: 18px;
+        font-weight: normal;
+      }
+    }
+    button{
+      display: block;
+      margin: 20px auto;
+      outline: none;
+      border: none;
+      background: darkgreen;
+      width: 150px;
+      height: 40px;
+      color: white;
+      font-size: 18px;
+      font-weight: 700;
+      transition: all .2s;
+      &:hover{
+        background: #10a609;
+      }
+    }
+  }
+}
